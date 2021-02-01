@@ -8,3 +8,4 @@ class UserPhone(models.Model):
         on_delete=models.CASCADE(),
         related_name="phone",
     )
+    phone_number = models.CharField(max_length=12)
