@@ -12,3 +12,4 @@ class UserPhone(models.Model):
         max_length=12,
         verbose_name="номер телефона"
     )
+
