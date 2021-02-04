@@ -26,3 +26,6 @@ class Book(models.Model):
         through="manage_book.UserBook",
         related_name="bought_books  "
     )
+
+
+class UserBook(models.Model):
