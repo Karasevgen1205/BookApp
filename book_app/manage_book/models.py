@@ -21,3 +21,8 @@ class Book(models.Model):
         on_delete=models.CASCADE,
         related_name="books"
     )
+    buyer = models.ManyToManyField(
+        User,
+        through="manage_book.UserBook",
+        related_name="bought_books  "
+    )
