@@ -29,3 +29,4 @@ class Book(models.Model):
 
 
 class UserBook(models.Model):
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
