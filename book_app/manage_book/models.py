@@ -32,3 +32,4 @@ class UserBook(models.Model):
     book = models.ForeignKey(Book, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_book_saled")
     date = models.DateField(auto_now_add=True)
+    count = models.PositiveIntegerField(default=1)
