@@ -13,3 +13,6 @@ class UserPhone(models.Model):
         verbose_name="номер телефона"
     )
 
+
+class Book(models.Model):
+    title = models.CharField(max_length=100)
